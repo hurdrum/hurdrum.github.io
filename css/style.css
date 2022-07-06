@@ -1,0 +1,715 @@
+body {
+    font-family: 'lato', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+button {
+    font-family: 'lato', sans-serif;
+}
+p {
+    font-size: 14px;
+}
+b {
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+h1 {
+    font-size: 24px;
+}
+.big-menu li:hover, 
+.join-btn:hover, 
+.logo:hover,
+.arrow:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.circle {
+    background: #F9B85A;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+}
+.title-block {
+    position: relative;
+}
+.background-title {
+    font-size: 90px;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px #E5E5E5;
+    text-transform: uppercase;
+    padding-left: 15px;
+    z-index: -10;
+}
+.title {
+    padding-left: 15px;
+    position: absolute;
+    top: 40px;
+}
+
+/* вот тут жара пошла */
+.intro {
+    height: 576px;
+    display: flex;
+    background: #C4C4C4;
+}
+/* навигация */
+header {
+    width: 100%;
+    max-width: 1920px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    transition: 500ms;
+}
+.header-bg { 
+    background: #fff;
+    transition: 500ms;
+}
+.logo {
+    width: 111px;
+    height: 57px;
+    margin-left: 20px;
+    transition: 200ms;
+}
+.logo-img {
+    width: 100%;
+    height: 100%;
+}
+.big-menu {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 70%;
+    display: flex;  
+    justify-content: space-between;
+}
+.big-menu li {
+    transition: 200ms;
+}
+.nav-links-list {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+.profile-links-list {
+    display: flex;
+    width: 25%;
+    max-width: 200px;
+    justify-content: space-between;
+}
+/* название со слоганом и кнопкой */
+.intro-info {
+    margin: auto;
+}
+.intro-text {
+    width: 270px;
+    font-size: 12px;
+    line-height: 130%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.join-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    font-size: 12px;
+    background: #F9B85A;
+    transition: 200ms;
+}
+/* тарифы */
+.tariffs {
+    scroll-margin: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.tariffs-slider-window {
+    align-self: center;
+}
+.tariffs-slider {
+    margin: 15px 0 75px 15px;
+    max-height: 455px;
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tariff-card {
+    box-sizing: border-box;
+    padding: 42px 20px 25px 20px;
+    margin-right: 20px;
+    width: 233px;
+    height: 453px;
+    flex-shrink: 0;
+
+    background: #E5E5E5;
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    transition: 300ms;
+}
+.tariff-card:last-child {
+    margin-right: 0;
+}
+.tariff-title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    transition: 300ms;
+}
+.tariff-price {
+    color: #F9B85A;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: 300ms;
+}
+.tariff-desc {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    transition: 300ms;
+}
+.tariff-programm {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+.tariff-programm li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.tariff-programm li:first-child {
+    margin-top: 20px;
+}
+.tariff-btn {
+    height: 40px;
+    align-self: center;
+    margin-top: 20px;
+    border: 1px solid #F9B85A;
+    background: rgba(0, 0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+.actvive-tariff-card-content {
+    margin-top: 20px;
+    display: none;
+}
+/* выбранная карточка */
+.tariff-card:hover {
+    width: 310px;
+    height: 526px;
+    padding: 22px 40px 25px 40px;
+
+    background: #fff;
+    border: 3px solid #000000;
+    transition: 300ms;
+    z-index: 10;
+}
+.tariff-card:hover .tariff-title {
+    font-size: 16px;
+    transition: 300ms;
+}
+.tariff-card:hover .tariff-price {
+    font-size: 16px;
+    transition: 300ms;
+}
+.tariff-card:hover .tariff-desc {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: none;
+}
+.tariff-card:hover .tariff-programm {
+    list-style-type: disc;
+    font-size: 14px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+.tariff-card:hover .tariff-programm-b {
+    margin-bottom: 0px;
+}
+.tariff-card:hover .tariff-programm li::marker {
+    color:#F9B85A;
+}
+.tariff-card:hover .actvive-tariff-card-content {
+    display: block;
+    /* margin-bottom: 20px; */
+}
+.tariff-extra {
+    list-style-type: disc;
+    font-size: 14px;
+    font-weight: 700;
+}
+.tariff-extra li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.tariff-extra li:first-child {
+    margin-top: 5px;
+    position: relative;
+}
+.tariff-extra li:first-child div {
+    position: absolute;
+    left: 55px;
+    top: 0px;
+    font-size: 12px;
+}
+.lessons-list {
+    margin-bottom: 30px;
+}
+.tariff-extra li:first-child div p {
+    font-size: 12px;
+    line-height: 14px;
+}
+.tariff-extra li::marker, .active-tariff-programm li::marker {
+    color:#F9B85A;
+}
+.tariff-card:hover .tariff-btn {
+    height: 48px;
+    color:#fff;
+    background:#F9B85A;
+    flex-shrink: 0;
+}
+.tariff-card:hover .tariff-btn-b {
+    margin-top: 10px;
+} 
+
+
+/* бонусы */
+.bonuses {
+    scroll-margin: 70px;
+    background: url('../img/waves.svg') no-repeat;
+    background-size: 100%;
+    background-position: 0 bottom;
+    padding-bottom: 20px;
+}
+.bonuses-list {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.bonus {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.bonus:nth-child(2), .bonus:nth-child(4) {
+    margin-left: 10vw;
+}
+.bonus:nth-child(3) {
+    margin-left: 20vw;
+}
+.bonus:last-child {
+    margin-bottom: 0;
+}
+.bonus-number {
+    position: relative;
+}
+.bonus-circle {
+    width: 54px;
+    height: 54px;
+}
+.bonus-number p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    color: #000000;
+    position: absolute;
+    top: -22px;
+    left: 7px;
+}
+.bonus-text {
+    min-width: 290px;
+    max-width: 360px;
+    margin-left: 60px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+/* а для кого же курс? */
+.audience {
+    background: #F9B85A;
+    padding-bottom: 20px;
+}
+.aud-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aud-cards-block {
+    display: flex;
+    margin-bottom: 22px;
+}
+.aud-card {
+    box-sizing: border-box;
+    padding: 25px 10px 15px 10px;
+    width: 180px;
+    height: 240px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+.aud-card:nth-child(5) {
+    margin-right: 0;
+}
+.aud-card-img-block {
+    width: 100%;
+    height: 70%;
+}
+.aud-card-img {
+    width: 100%;
+    height: 100%;
+}
+.aud-card-text {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+.join-btn-aud {
+    background-color: #fff;
+    color: #000;
+    font-size: 10px;
+}
+
+/* опа скилы пошли */
+.skills {
+    background: url('../img/skills-bg.svg') no-repeat;
+    background-size: 100%;
+    background-position: 0 bottom;
+    padding-bottom: 20px;
+}
+.skills-list {
+    align-items: flex-end;
+}
+.skill:nth-child(2), .skill:nth-child(4) {
+    margin-left: 0;
+    margin-right: 10vw;
+}
+.skill:nth-child(3) {
+    margin-left: 0;
+    margin-right: 20vw;
+}
+
+/* дальше создатель курса хочет похвастатья фоточкой */
+.creator {
+    scroll-margin: 70px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.creator-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 30px 10px;
+}
+.creator-info {
+    display: flex;
+    flex-direction: column;
+}
+.creator-info-item {
+    margin-bottom: 50px;
+    display: flex;
+}
+.creator-info-item:last-of-type {
+    margin-bottom: 0px;
+}
+.creator-info-img {
+    margin-right: 20px;
+}
+.creator-info-text {
+    max-width: 360px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.creator-img-block {
+    margin-left: 20px;
+}
+.creator-img {
+    width: 100%;
+    height: 100%;
+}
+.creator .join-link {
+    align-self: center;
+}
+.join-btn-creator {
+    border-radius: 100px;
+    width: 233px;
+    height: 63px;
+    font-size: 14px;
+}
+
+/* казалось бы, причем тут космос? */
+.stars {
+    display: flex;
+    flex-direction: column;
+}
+.stars-arrow {
+    display: none;
+}
+.stars-content {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    background: url('../img/stars-bg.svg') no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 170px 20px 170px 20px 170px 20px 170px 1fr;
+    grid-template-rows: 115px 20px 67px 20px 30px 20px 65px 20px 30px 20px 67px 20px 115px;
+}
+.star-block {
+    background: #C4C4C4;
+    transition: 200ms;
+}
+.star-block:hover {
+    box-shadow: 0px 4px 14px 3px rgba(249, 184, 90, 0.3);
+    transition: 200ms;
+}
+/* левая часть */
+.block-1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.block-2 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.block-3 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 8;
+}
+.block-4 {
+    grid-column-start: 4;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+.block-5 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 14;
+}
+/* правая часть */
+.block-6 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.block-7 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 10    ;
+}
+.block-8 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 12;
+}
+.block-9 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+.block-10 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 13;
+    grid-row-end: 14;
+}
+.large-photo {
+    width: 340px;
+    height: 230px;
+    z-index: 1;
+    background-color: #F9B85A;
+    position: relative;
+    bottom: 55px;
+    right: 80px;
+    transition: 200ms;
+}
+
+/* жаль не найк конечно */
+.brends {
+    background-color: #F9B85A;
+    display: flex;
+    flex-direction: column;
+}
+.brends-content {
+    margin-top: 30px;
+    width: 750px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.brend-logo-block {
+    margin: 0 15px 35px 15px;
+}
+.brend-logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* хз причем тут телевизор вообще */
+.tv-reviews {
+    scroll-margin: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.tv-r-title {
+    position: static;
+    margin-top: 28px;
+    margin-bottom: 45px;
+}
+.tv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    align-self: center;
+}
+.tv-slider-window {
+    width: 742px;
+    overflow: hidden;
+}
+.tv-content, .rv-content {
+    display: flex;
+    transform: translate(0);
+}
+.tv-block {
+    background: #C4C4C4;
+    width: 234px;
+    height: 123px;
+    margin-right: 20px;
+    
+    flex-shrink: 0;
+}
+.tv-block:last-child {
+    margin-right: 0;
+}
+.arrow {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* контактируй со мной */
+.contacts-title {
+    position: static;
+    margin-bottom: 10px;
+}
+.contacts {
+    background: #F9B85A;
+    padding-top: 65px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+}
+.contacts-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form input {
+    width: 370px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #000;
+    background-color: rgba(0, 0, 0, 0);
+}
+.contact-form ::placeholder {
+    color:#000;
+    font-weight: 400;
+    font-size: 14px;
+}
+.message-btn {
+    width: 170px;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+}
+
+/* так называемый футер */
+footer {
+    padding: 0 15px 30px 15px;
+    box-sizing: content-box;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.footer-logo-socials {
+    padding: 35px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-link {
+    margin-right: 10px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+.pre-margin-text {
+    margin-bottom: 20px;
+}
+.footer-links {
+    display: flex;
+}
+.footer-links ul:first-child {
+    margin-right: 50px;
+}
+.footer-links li {
+    margin-bottom: 10px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cookie {
+    width: 340px;
+    margin-right: 30px;
+}
+footer p, footer li {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+@media screen and (min-width: 1240px) {
+    .bonuses, .skills {
+        background-position: 0 100px;
+    }    
+}
