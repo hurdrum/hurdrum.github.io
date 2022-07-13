@@ -1,3 +1,4 @@
+if (screen.width > 770) {
 document.querySelectorAll('.tariff-card').forEach(item => {
     item.addEventListener('mouseover', () => {
         let prevCard = item.previousSibling.previousSibling;
@@ -17,3 +18,4 @@ document.querySelectorAll('.tariff-card').forEach(item => {
         item.style = '';
     })
 });
+}

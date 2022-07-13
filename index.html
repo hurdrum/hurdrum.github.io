@@ -7,13 +7,13 @@
         <title>сммшкола.рф</title>
         <link href="img/circle_logo.svg" rel="icon" type="svg">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet">
-        <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="fonts/lato.css">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+        <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/mobile.css">
     </head>
@@ -98,8 +98,8 @@
                 <h1 class="title mobile-title-tariffs">Тарифы</h1>
             </div>
             <div class="tariffs-slider-window">
-                <div class="tariffs-slider">
-                    <div class="tariff-card">
+                <div class="swiper-wrapper tariffs-slider">
+                    <div class="swiper-slide tariff-card">
                         <div class="tariff-card-content">
                             <p class="tariff-title">КЛАСС 0</p>
                             <p class="tariff-price">0 ₽</p>
@@ -113,7 +113,7 @@
                         </div>
                         <button class="join-btn tariff-btn">выбрать</button>
                     </div>
-                    <div class="tariff-card">
+                    <div class="swiper-slide tariff-card">
                         <div class="tariff-card-content">
                             <p class="tariff-title">КЛАСС А</p>
                             <p class="tariff-price">6000 ₽</p>
@@ -133,7 +133,7 @@
                         </div>
                         <button class="join-btn tariff-btn">выбрать</button>
                     </div>
-                    <div class="tariff-card">
+                    <div class="swiper-slide tariff-card">
                         <div class="tariff-card-content">
                             <p class="tariff-title">КЛАСС Б</p>
                             <p class="tariff-price">10000 ₽</p>
@@ -231,27 +231,27 @@
                         <img src="img/arrow-left.svg" alt="arrow" class="arrow">
                     </div>
                     <div class="aud-slider-window">
-                        <div class="aud-cards-block">
-                            <div class="aud-card">
+                        <div class="swiper-wrapper aud-cards-block">
+                            <div class="swiper-slide aud-card">
                                 <div class="aud-card-img-block">
                                     <img src="img/specialist.svg" alt="specialist" class="aud-card-img">
                                 </div>
                                 <p class="aud-card-text">Начинающим специалистам и тем, кто хочет сменить или освоить новую профессию.</p>
                             </div>
-                            <div class="aud-card">
+                            <div class="swiper-slide aud-card">
                                 <div class="aud-card-img-block">
                                     <img src="img/businessman.svg" alt="specialist" class="aud-card-img">
                                 </div>                                
                                 <p class="aud-card-text">Бизнесменам и бизнесвумен, которые хотят самостоятельно
                                     развивать свой бизнес в Инстаграм.</p>
                             </div>
-                            <div class="aud-card">
+                            <div class="swiper-slide aud-card">
                                 <div class="aud-card-img-block">
                                     <img src="img/student.svg" alt="specialist" class="aud-card-img">
                                 </div>                                
                                 <p class="aud-card-text">Студентам, ищущим подработку на время обучения и после.</p>
                             </div>
-                            <div class="aud-card">
+                            <div class="swiper-slide aud-card">
                                 <div class="aud-card-img-block">
                                     <img src="img/family.svg" alt="specialist" class="aud-card-img">
                                 </div>                                
@@ -379,24 +379,26 @@
                     <img src="img/arrow-left.svg" alt="arrow" class="arrow">
                 </div>
                 <div class="stars-slider-window">
-                    <div class="stars-content">
-                        <div class="star-block block-1">1</div>
-                        <div class="star-block block-2">2</div>
-                        <div class="star-block block-3">3</div>
-                        <div class="star-block block-4">4</div>
-                        <div class="star-block block-5">5</div>
-                        <div class="star-block block-6">6</div>
-                        <div class="star-block block-7">7</div>
-                        <div class="star-block block-8">8</div>
-                        <div class="star-block block-9">9</div>
-                        <div class="star-block block-10">10</div>
+                    <div class=" swiper-wrapper stars-content">
+                        <div class="swiper-slide star-block block-1">1</div>
+                        <div class="swiper-slide star-block block-2">2</div>
+                        <div class="swiper-slide star-block block-3">3</div>
+                        <div class="swiper-slide star-block block-4">4</div>
+                        <div class="swiper-slide star-block block-5">5</div>
+                        <div class="swiper-slide star-block block-6">6</div>
+                        <div class="swiper-slide star-block block-7">7</div>
+                        <div class="swiper-slide star-block block-8">8</div>
+                        <div class="swiper-slide star-block block-9">9</div>
+                        <div class="swiper-slide star-block block-10">10</div>
                     </div>
+                    <div class="swiper-pagination"></div>             
                 </div>
                 <div class="stars-arrow stars-next-arrow">
                     <img src="img/arrow-rigth.svg" alt="arrow" class="arrow">
                 </div>
             </div>
         </div>
+        
         <div class="brends">
             <div class="title-block">
                 <p class="background-title">Бренды</p>
@@ -412,45 +414,37 @@
                 <div class="brend-logo-block"><img src="img/cheatmeal-logo.svg" alt="" class="brend-logo"></div>
             </div>
         </div>
+        
         <div class="tv-reviews" id="reviews">
             <h1 class="title tv-r-title">Мы на TV</h1>
             <div class="tv">
-                <div class="tv-arrow tv-prev-arrow">
-                    <img src="img/arrow-left.svg" alt="arrow" class="arrow">
-                </div>
                 <div class="tv-slider-window">
-                    <div class="tv-content">
-                        <div class="tv-block">some text for block number 1</div>
-                        <div class="tv-block">some text for block number 2</div>
-                        <div class="tv-block">some text for block number 3</div>
-                        <div class="tv-block">some text for block number 4</div>
-                        <div class="tv-block">some text for block number 5</div>
-                        <div class="tv-block">some text for block number 6</div>
-                    </div>
-                </div>
-                <div class="tv-arrow tv-next-arrow">
-                    <img src="img/arrow-rigth.svg" alt="arrow" class="arrow">
+                    <div class="swiper-wrapper tv-content">
+                        <div class="swiper-slide tv-block">some text for block number 1</div>
+                        <div class="swiper-slide tv-block">some text for block number 2</div>
+                        <div class="swiper-slide tv-block">some text for block number 3</div>
+                        <div class="swiper-slide tv-block">some text for block number 4</div>
+                        <div class="swiper-slide tv-block">some text for block number 5</div>
+                        <div class="swiper-slide tv-block">some text for block number 6</div>
+                    </div>                   
+                    <div class="swiper-pagination"></div>             
                 </div>
             </div>
             <h1 class="title tv-r-title">Отзывы</h1>
             <div class="tv">
-                <div class="tv-arrow rv-prev-arrow">
-                    <img src="img/arrow-left.svg" alt="arrow" class="arrow">
-                </div>
                 <div class="tv-slider-window">
-                    <div class="rv-content">
-                        <div class="tv-block">some text for block number 1</div>
-                        <div class="tv-block">some text for block number 2</div>
-                        <div class="tv-block">some text for block number 3</div>
-                        <div class="tv-block">some text for block number 4</div>
+                    <div class="swiper-wrapper rv-content">
+                        <div class="swiper-slide tv-block">some text for block number 1</div>
+                        <div class="swiper-slide tv-block">some text for block number 2</div>
+                        <div class="swiper-slide tv-block">some text for block number 3</div>
+                        <div class="swiper-slide tv-block">some text for block number 4</div>
                     </div>
-                </div>
-                <div class="tv-arrow rv-next-arrow">
-                    <img src="img/arrow-rigth.svg" alt="arrow" class="arrow">
+                    <div class="swiper-pagination"></div>             
                 </div>
             </div>
             <h1 class="title contacts-title">Есть вопросы? Задавайте</h1>
         </div>
+        
         <div class="contacts">
             <div class="contacts-content">
                 <form action="" class="contact-form">
@@ -486,6 +480,7 @@
                     </a>
                 </div>
             </div>
+            
             <div class="footer-info">
                 <div class="company-info">
                     <p class="ip-info">Индивидуальный Предприниматель</p> 
@@ -526,7 +521,8 @@
         </footer>
         <script src="js/menu.js"></script>
         <script src="js/tariffs.js"></script>
-        <script src="js/sliders.js"></script>
         <script src="js/stars.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/sliders.js"></script>
     </body>
 </html>

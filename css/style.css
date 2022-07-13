@@ -32,6 +32,10 @@ h1 {
     width: 57px;
     height: 57px;
 }
+.arrow {
+    padding: 10px;
+    cursor: pointer;
+}
 .title-block {
     position: relative;
 }
@@ -128,14 +132,9 @@ header {
     display: flex;
     flex-direction: column;
 }
-.tariffs-slider-window {
-    align-self: center;
-}
 .tariffs-slider {
-    margin: 15px 0 75px 15px;
+    margin: 15px 0 75px;
     max-height: 455px;
-    max-width: 740px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +153,7 @@ header {
 
     display: flex;
     flex-direction: column;
+    
     transition: 300ms;
 }
 .tariff-card:last-child {
@@ -246,7 +246,6 @@ header {
 }
 .tariff-card:hover .actvive-tariff-card-content {
     display: block;
-    /* margin-bottom: 20px; */
 }
 .tariff-extra {
     list-style-type: disc;
@@ -484,6 +483,7 @@ header {
 .star-block:hover {
     box-shadow: 0px 4px 14px 3px rgba(249, 184, 90, 0.3);
     transition: 200ms;
+    cursor:zoom-in;
 }
 /* левая часть */
 .block-1 {
@@ -589,31 +589,24 @@ header {
 .tv {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
-    align-self: center;
+    justify-content: center;
 }
 .tv-slider-window {
-    width: 742px;
+    width: 739px;
+    height: 173px;
     overflow: hidden;
-}
-.tv-content, .rv-content {
-    display: flex;
-    transform: translate(0);
+    position: relative;
 }
 .tv-block {
     background: #C4C4C4;
-    width: 234px;
     height: 123px;
-    margin-right: 20px;
-    
-    flex-shrink: 0;
 }
-.tv-block:last-child {
-    margin-right: 0;
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
 }
-.arrow {
-    padding: 10px;
-    cursor: pointer;
+.swiper-pagination-bullet-active {
+    background: #F9B85A;
 }
 
 /* контактируй со мной */

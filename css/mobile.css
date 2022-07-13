@@ -7,10 +7,6 @@
 }
 
 @media screen and (max-width: 770px) {
-  .tariffs {
-    overflow: hidden;
-  }
-
   .intro {
     height: 385px;
     margin-top: 10px;
@@ -148,17 +144,13 @@
 
   .tariffs-slider-window {
     width: 310px;
-    overflow: hidden;
+    margin: 0 auto;
   }
 
   .tariffs-slider {
-    margin: 15px 0 75px 15px;
+    margin-bottom: 50px;
     max-height: none;
-    max-width: none;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
   }
 
   .tariff-card {
@@ -169,6 +161,7 @@
     border: 3px solid #000000;
     transition: 300ms;
     z-index: 10;
+    margin: 0;
   }
 
   .tariff-title {
@@ -193,6 +186,10 @@
     list-style-type: disc;
     font-size: 14px;
     font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .tariff-programm-b {
+    margin-bottom: 0px;
   }
 
   .tariff-programm li::marker {
@@ -236,6 +233,11 @@
     flex-shrink: 0;
   }
 
+  .tariff-btn-b {
+    margin-top: 10px;
+  } 
+
+
   .bonuses {
     scroll-margin: 50px;
     background: #fff;
@@ -268,6 +270,7 @@
     width: 200px;
     height: 248px;
     flex-shrink: 0;
+    margin: 0;
   }
 
   .join-btn-aud {
@@ -293,35 +296,38 @@
   }
 
   .stars {
-    background-image: none;
     align-items: center;
   }
 
   .stars-block {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   .stars-slider-window {
     width: 244px;
+    height: 270px;
+    position: relative;
     overflow: hidden;
   }
 
   .stars-content {
+    margin: 0;
     display: flex;
-    transform: translate(0);
+    background-image: none;
   }
 
   .star-block {
-    width: 244px;
+    min-width: 0;
     height: 230px;
-    margin-right: 100px;
-    flex-shrink: 0;
   }
 
   .stars-arrow {
     display: block;
     margin: 20px;
+    position: relative;
+    bottom: 20px;
   }
 
   .brends-content {

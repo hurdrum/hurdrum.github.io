@@ -44,8 +44,6 @@ window.addEventListener('scroll', onScroll)
 
 
 // smooth transition to sections
-// const nav_links = document.querySelectorAll('#nav-link')
-
 for (let link of nav_links) {
   link.addEventListener('click', function (e) {
     e.preventDefault()

@@ -1,3 +1,4 @@
+// star photos zoom
 if (screen.width > 770) {
 
     const starPhotos = document.querySelectorAll('.star-block')
