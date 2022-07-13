@@ -1,7 +1,6 @@
 // tariffs slider
 if (screen.width < 770) {
     const audSlider = new Swiper('.tariffs-slider-window', {
-        loop: true,
         spaceBetween: 100,
         speed: 700,
         initialSlide: 1

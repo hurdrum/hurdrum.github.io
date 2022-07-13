@@ -140,6 +140,7 @@
     scroll-margin: 50px;
     background: url("../img/stars-bg.svg") no-repeat;
     background-position: center left;
+    overflow: hidden;
   }
 
   .tariffs-slider-window {
